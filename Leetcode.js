@@ -42,3 +42,13 @@ var timeLimit = function(fn, t) {
         ]);
     };
 };
+
+//is object empty
+//there are a few ways to check
+//object.keys(value). length === 0
+//for loop - for (let prop in value) if value.hasownproperty(prop) return false --- return true
+//json.stringify(value) === {}
+
+var isEmpty = function(obj) {
+    return Object.keys(obj).length === 0;
+};
