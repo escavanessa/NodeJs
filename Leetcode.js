@@ -25,3 +25,20 @@ var cancellable = function(fn, args, t) {
     let cancelFn = () => clearInterval(interval);
     return cancelFn;
 };
+
+//promise time limit
+//given an async function and a time, return a new time limited version of the input function
+//if fn completes within t, it resolves with result
+//if fn excedes t, the time limit function should reject with string "time limit exceeded"
+//youll need promise.race
+//returns a single promise. this returns the eventual state of the first promise that settles. 
+// i dont know what the underscore in the second promise is doing.
+
+var timeLimit = function(fn, t) {
+    return async function(...args) {
+        return await Promise.race([
+            new Promise(resolve => resolve(fn(...args))),
+            new Promise((_, reject) => setTimeout(() => reject("Time Limir Exceeded"), t))
+        ]);
+    };
+};
