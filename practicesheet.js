@@ -93,6 +93,34 @@
 //Bank Account
 //account number and balance (generate a random number for aN)
 //withdraw and deposit money
+//dont forget the methods can have their own parameters - to be able to add or subtract in the methods, you can pass the amount into the methods. when you call the method, youd pass the amount you want!
+
+class BankAccount {
+  constructor(accountNumber, balance) {
+    this.accountNumber = accountNumber;
+    this.balance = balance;
+  }
+
+  deposit(amount) {
+    this.balance += amount;
+  }
+
+  withdraw(amount) {
+    this.balance -= amount
+  }
+
+  displayDetails() {
+    console.log(this.balance)
+  }
+}
+const vanessa = new BankAccount(1234, 5000)
+vanessa.deposit(400)
+vanessa.displayDetails();
+vanessa.deposit(500);
+vanessa.displayDetails();
+vanessa.withdraw(1000);
+vanessa.displayDetails();
+
 
 
 
