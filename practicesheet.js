@@ -35,26 +35,54 @@
 
 //rectangle class / object - width height prop - methods for area and perimeter
 
-class Rectangle {
-  constructor(width, height) {
-    this.width = width,
-    this.height = height
+// class Rectangle {
+//   constructor(width, height) {
+//     this.width = width,
+//     this.height = height
+//   }
+//   findArea() {
+//     let result = this.width * this.height;
+//     console.log(`Area: ${result}`)
+//   }
+//   findPerimeter() {
+//     let result = this.width + this.height;
+//     console.log(`Perimeter: ${result}`)
+//   }
+// }
+
+// const Rectangle1 = new Rectangle(4, 8);
+// Rectangle1.findArea();
+// Rectangle1.findPerimeter();
+
+//vehicle
+//make model and year - subclass for car that overides display fn for amount of doors.
+//class child extends parent
+
+class Vehicle {
+  constructor(make, model, year) {
+    this.make = make;
+    this.model = model;
+    this.year = year;
   }
-  findArea() {
-    let result = this.width * this.height;
-    console.log(`Area: ${result}`)
+  displayDetails() {
+    console.log(`Details: ${this.make}, ${this.model}, ${this.year}`)
   }
-  findPerimeter() {
-    let result = this.width + this.height;
-    console.log(`Perimeter: ${result}`)
+} 
+
+class Car extends Vehicle {
+  constructor(make, model, year, doors) {
+    super(make, model, year)
+    this.doors = doors;
+  }
+  displayDetails() {
+    console.log(`Make: ${this.make}, 'Model:' ${this.model}, 'Year:' ${this.year}, 'Doors:' ${this.doors}`)
   }
 }
 
-const Rectangle1 = new Rectangle(4, 8);
-Rectangle1.findArea();
-Rectangle1.findPerimeter();
-
-
+const vehicle1 = new Vehicle('subaru', 'some model', '2024')
+vehicle1.displayDetails();
+const car1 = new Car('porsche', '911', '2008', 2)
+car1.displayDetails();
 
 
 
