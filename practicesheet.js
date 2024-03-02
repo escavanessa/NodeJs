@@ -17,20 +17,43 @@
 //js program to create class called person that takes name, age, country 
 //include method to display persons details
 
-class Person {
-  constructor(name, age, country) {
-    this.name = name,
-    this.age = age;
-    this.country = country;
-  }
+// class Person {
+//   constructor(name, age, country) {
+//     this.name = name,
+//     this.age = age;
+//     this.country = country;
+//   }
 
-  displayDetails() {
-    console.log(` Details: ${this.name}, ${this.age}, ${this.country},`)
+//   displayDetails() {
+//     console.log(` Details: ${this.name}, ${this.age}, ${this.country},`)
+//   }
+// }
+
+// const Vanessa = new Person('vanessa', '24', 'united states')
+// Vanessa.displayDetails()
+
+
+//rectangle class / object - width height prop - methods for area and perimeter
+
+class Rectangle {
+  constructor(width, height) {
+    this.width = width,
+    this.height = height
+  }
+  findArea() {
+    let result = this.width * this.height;
+    console.log(`Area: ${result}`)
+  }
+  findPerimeter() {
+    let result = this.width + this.height;
+    console.log(`Perimeter: ${result}`)
   }
 }
 
-const Vanessa = new Person('vanessa', '24', 'united states')
-Vanessa.displayDetails()
+const Rectangle1 = new Rectangle(4, 8);
+Rectangle1.findArea();
+Rectangle1.findPerimeter();
+
 
 
 
