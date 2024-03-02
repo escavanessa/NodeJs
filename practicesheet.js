@@ -14,6 +14,12 @@
 // }
 
 
+// console.log(bike.gears)
+// console.log(bike.currentGear)
+// bike.changeGear('up', 6)
+// console.log(bike.currentGear)
+
+
 //js program to create class called person that takes name, age, country 
 //include method to display persons details
 
@@ -58,38 +64,36 @@
 //make model and year - subclass for car that overides display fn for amount of doors.
 //class child extends parent
 
-class Vehicle {
-  constructor(make, model, year) {
-    this.make = make;
-    this.model = model;
-    this.year = year;
-  }
-  displayDetails() {
-    console.log(`Details: ${this.make}, ${this.model}, ${this.year}`)
-  }
-} 
+// class Vehicle {
+//   constructor(make, model, year) {
+//     this.make = make;
+//     this.model = model;
+//     this.year = year;
+//   }
+//   displayDetails() {
+//     console.log(`Details: ${this.make}, ${this.model}, ${this.year}`)
+//   }
+// } 
 
-class Car extends Vehicle {
-  constructor(make, model, year, doors) {
-    super(make, model, year)
-    this.doors = doors;
-  }
-  displayDetails() {
-    console.log(`Make: ${this.make}, 'Model:' ${this.model}, 'Year:' ${this.year}, 'Doors:' ${this.doors}`)
-  }
-}
+// class Car extends Vehicle {
+//   constructor(make, model, year, doors) {
+//     super(make, model, year)
+//     this.doors = doors;
+//   }
+//   displayDetails() {
+//     console.log(`Make: ${this.make}, 'Model:' ${this.model}, 'Year:' ${this.year}, 'Doors:' ${this.doors}`)
+//   }
+// }
 
-const vehicle1 = new Vehicle('subaru', 'some model', '2024')
-vehicle1.displayDetails();
-const car1 = new Car('porsche', '911', '2008', 2)
-car1.displayDetails();
+// const vehicle1 = new Vehicle('subaru', 'some model', '2024')
+// vehicle1.displayDetails();
+// const car1 = new Car('porsche', '911', '2008', 2)
+// car1.displayDetails();
 
+//Bank Account
+//account number and balance (generate a random number for aN)
+//withdraw and deposit money
 
-
-// console.log(bike.gears)
-// console.log(bike.currentGear)
-// bike.changeGear('up', 6)
-// console.log(bike.currentGear)
 
 
 //function fizzBuzz() {
