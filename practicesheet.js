@@ -14,6 +14,27 @@
 // }
 
 
+//js program to create class called person that takes name, age, country 
+//include method to display persons details
+
+class Person {
+  constructor(name, age, country) {
+    this.name = name,
+    this.age = age;
+    this.country = country;
+  }
+
+  displayDetails() {
+    console.log(` Details: ${this.name}, ${this.age}, ${this.country},`)
+  }
+}
+
+const Vanessa = new Person('vanessa', '24', 'united states')
+Vanessa.displayDetails()
+
+
+
+
 // console.log(bike.gears)
 // console.log(bike.currentGear)
 // bike.changeGear('up', 6)
