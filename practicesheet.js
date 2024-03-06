@@ -95,31 +95,59 @@
 //withdraw and deposit money
 //dont forget the methods can have their own parameters - to be able to add or subtract in the methods, you can pass the amount into the methods. when you call the method, youd pass the amount you want!
 
-class BankAccount {
-  constructor(accountNumber, balance) {
-    this.accountNumber = accountNumber;
-    this.balance = balance;
-  }
+// class BankAccount {
+//   constructor(accountNumber, balance) {
+//     this.accountNumber = accountNumber;
+//     this.balance = balance;
+//   }
 
-  deposit(amount) {
-    this.balance += amount;
-  }
+//   deposit(amount) {
+//     this.balance += amount;
+//   }
 
-  withdraw(amount) {
-    this.balance -= amount
-  }
+//   withdraw(amount) {
+//     this.balance -= amount
+//   }
 
-  displayDetails() {
-    console.log(this.balance)
+//   displayDetails() {
+//     console.log(this.balance)
+//   }
+// }
+// const vanessa = new BankAccount(1234, 5000)
+// vanessa.deposit(400)
+// vanessa.displayDetails();
+// vanessa.deposit(500);
+// vanessa.displayDetails();
+// vanessa.withdraw(1000);
+// vanessa.displayDetails();
+
+
+//Shape
+//method to calculate area
+//two subclasses - circle and triangle that inheret shape and override area method
+
+
+class Shape {
+  area() {
+    throw new Error('method must be overidden')
   }
 }
-const vanessa = new BankAccount(1234, 5000)
-vanessa.deposit(400)
-vanessa.displayDetails();
-vanessa.deposit(500);
-vanessa.displayDetails();
-vanessa.withdraw(1000);
-vanessa.displayDetails();
+
+class Triangle extends Shape {
+  constructor(base, height) {
+    super();
+    this.base = base;
+    this.height = height;
+  }
+
+  area() {
+    return this.base * this.height / 2;
+  }
+}
+
+const triangle1 = new Triangle(4, 12)
+const triangleArea = triangle1.area()
+console.log(`triangle area ${triangleArea}`)
 
 
 
