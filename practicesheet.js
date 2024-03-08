@@ -15,13 +15,13 @@
 class Employee {
   constructor(name, salary) {
     this.name = name;
-    this.salary = salary; 
+    this.salary = salary;
+    console.log(`name: ${name}, hourly rate: ${salary}`) 
   }
 
-  calculateSalary(hourly, hours) {
-    let weekly = hourly * hours;
-    let salary = weekly * 52;
-    console.log(`You annual base Salary: ${salary}`)
+  calculateSalary() {
+    let weekly = this.salary * 40;
+    console.log(weekly * 52)
   }
 }
 
@@ -29,9 +29,19 @@ class Manager extends Employee {
   constructor(name, salary, department) {
     super(name, salary)
     this.department = department;
+    console.log(`name: ${name}, salary: ${salary}, Department: ${department}`) 
   }
-
+  calculateSalary() {
+    let bonus = 10000;
+    console.log(this.salary + bonus);
+  }
 }
+
+const Banet = new Employee('Banet', 20);
+Banet.calculateSalary();
+const Vanessa = new Manager('vanessa', 20000, 'IT')
+Vanessa.calculateSalary();
+
 
 
 // console.log(bike.gears)
