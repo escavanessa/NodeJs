@@ -1,4 +1,3 @@
-
 //this is object literal notation. its great for one off objects but if you want to make two 
 //or more objects of the same type, youre gonna want to use objects with constructors.
 // const bike = {
@@ -12,6 +11,27 @@
 //     }
 //   }
 // }
+
+class Employee {
+  constructor(name, salary) {
+    this.name = name;
+    this.salary = salary; 
+  }
+
+  calculateSalary(hourly, hours) {
+    let weekly = hourly * hours;
+    let salary = weekly * 52;
+    console.log(`You annual base Salary: ${salary}`)
+  }
+}
+
+class Manager extends Employee {
+  constructor(name, salary, department) {
+    super(name, salary)
+    this.department = department;
+  }
+
+}
 
 
 // console.log(bike.gears)
@@ -125,29 +145,29 @@
 //Shape
 //method to calculate area
 //two subclasses - circle and triangle that inheret shape and override area method
+//
 
+// class Shape {
+//   area() {
+//     throw new Error('method must be overidden')
+//   }
+// }
 
-class Shape {
-  area() {
-    throw new Error('method must be overidden')
-  }
-}
+// class Triangle extends Shape {
+//   constructor(base, height) {
+//     super();
+//     this.base = base;
+//     this.height = height;
+//   }
 
-class Triangle extends Shape {
-  constructor(base, height) {
-    super();
-    this.base = base;
-    this.height = height;
-  }
+//   area() {
+//     return this.base * this.height / 2;
+//   }
+// }
 
-  area() {
-    return this.base * this.height / 2;
-  }
-}
-
-const triangle1 = new Triangle(4, 12)
-const triangleArea = triangle1.area()
-console.log(`triangle area ${triangleArea}`)
+// const triangle1 = new Triangle(4, 12)
+// const triangleArea = triangle1.area()
+// console.log(`triangle area ${triangleArea}`)
 
 
 
