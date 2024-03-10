@@ -12,35 +12,47 @@
 //   }
 // }
 
-class Employee {
-  constructor(name, salary) {
-    this.name = name;
-    this.salary = salary;
-    console.log(`name: ${name}, hourly rate: ${salary}`) 
-  }
-
-  calculateSalary() {
-    let weekly = this.salary * 40;
-    console.log(weekly * 52)
-  }
+//async function takes a call back and invokes it after a delay of 2 seconds. 
+function asyncFn(callback) {
+  setTimeout(callback, 2000)
 }
 
-class Manager extends Employee {
-  constructor(name, salary, department) {
-    super(name, salary)
-    this.department = department;
-    console.log(`name: ${name}, salary: ${salary}, Department: ${department}`) 
-  }
-  calculateSalary() {
-    let bonus = 10000;
-    console.log(this.salary + bonus);
-  }
+function delay() {
+  console.log('message displayed after two seconds!')
 }
 
-const Banet = new Employee('Banet', 20);
-Banet.calculateSalary();
-const Vanessa = new Manager('vanessa', 20000, 'IT')
-Vanessa.calculateSalary();
+asyncFn(delay);
+
+
+// class Employee {
+//   constructor(name, salary) {
+//     this.name = name;
+//     this.salary = salary;
+//     console.log(`name: ${name}, hourly rate: ${salary}`) 
+//   }
+
+//   calculateSalary() {
+//     let weekly = this.salary * 40;
+//     console.log(weekly * 52)
+//   }
+// }
+
+// class Manager extends Employee {
+//   constructor(name, salary, department) {
+//     super(name, salary)
+//     this.department = department;
+//     console.log(`name: ${name}, salary: ${salary}, Department: ${department}`) 
+//   }
+//   calculateSalary() {
+//     let bonus = 10000;
+//     console.log(this.salary + bonus);
+//   }
+// }
+
+// const Banet = new Employee('Banet', 20);
+// Banet.calculateSalary();
+// const Vanessa = new Manager('vanessa', 20000, 'IT')
+// Vanessa.calculateSalary();
 
 
 
