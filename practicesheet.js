@@ -12,16 +12,55 @@
 //   }
 // }
 
+//display todays date
+const today = new Date;
+
+const day = today.getDay();
+
+const weekDays = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
+
+console.log('Today is: ' + weekDays[day]);
+
+let hour = today.getHours();
+let minute = today.getMinutes();
+let seconds = today.getSeconds();
+
+let prepand = (hour >= 12) ? 'pm' : 'am';
+
+hour = (hour >= 12) ? hour - 12 : hour;
+
+if(hour === 0 && prepand === 'pm') {
+  if(minute === 0 && seconds === 0) {
+    hour = 12;
+    prepand = 'Noon';
+  } else {
+    hour = 12;
+    prepand = 'pm'
+  }
+}
+
+if(hour === 0 && prepand === 'am') {
+  if(minute === 0 && seconds === 0) {
+    hour = 12;
+    prepand = 'midnight'
+  } else {
+    hour = 12;
+    prepand = 'am';
+  }
+}
+
+console.log('current time: ' + hour + prepand + ' : ' + minute + ' : ' + seconds)
+
 //async function takes a call back and invokes it after a delay of 2 seconds. 
-function asyncFn(callback) {
-  setTimeout(callback, 2000)
-}
+// function asyncFn(callback) {
+//   setTimeout(callback, 2000)
+// }
 
-function delay() {
-  console.log('message displayed after two seconds!')
-}
+// function delay() {
+//   console.log('message displayed after two seconds!')
+// }
 
-asyncFn(delay);
+// asyncFn(delay);
 
 
 // class Employee {
