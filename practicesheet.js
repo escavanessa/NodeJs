@@ -12,44 +12,54 @@
 //   }
 // }
 
+// function area(a, b) {
+//   let result = a * b / 2
+//   console.log(result) 
+// }
+
+// area(4, 8);
+
+
+
+
 //display todays date
-const today = new Date;
+// const today = new Date;
 
-const day = today.getDay();
+// const day = today.getDay();
 
-const weekDays = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
+// const weekDays = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
 
-console.log('Today is: ' + weekDays[day]);
+// console.log('Today is: ' + weekDays[day]);
 
-let hour = today.getHours();
-let minute = today.getMinutes();
-let seconds = today.getSeconds();
+// let hour = today.getHours();
+// let minute = today.getMinutes();
+// let seconds = today.getSeconds();
 
-let prepand = (hour >= 12) ? 'pm' : 'am';
+// let prepand = (hour >= 12) ? 'pm' : 'am';
 
-hour = (hour >= 12) ? hour - 12 : hour;
+// hour = (hour >= 12) ? hour - 12 : hour;
 
-if(hour === 0 && prepand === 'pm') {
-  if(minute === 0 && seconds === 0) {
-    hour = 12;
-    prepand = 'Noon';
-  } else {
-    hour = 12;
-    prepand = 'pm'
-  }
-}
+// if(hour === 0 && prepand === 'pm') {
+//   if(minute === 0 && seconds === 0) {
+//     hour = 12;
+//     prepand = 'Noon';
+//   } else {
+//     hour = 12;
+//     prepand = 'pm'
+//   }
+// }
 
-if(hour === 0 && prepand === 'am') {
-  if(minute === 0 && seconds === 0) {
-    hour = 12;
-    prepand = 'midnight'
-  } else {
-    hour = 12;
-    prepand = 'am';
-  }
-}
+// if(hour === 0 && prepand === 'am') {
+//   if(minute === 0 && seconds === 0) {
+//     hour = 12;
+//     prepand = 'midnight'
+//   } else {
+//     hour = 12;
+//     prepand = 'am';
+//   }
+// }
 
-console.log('current time: ' + hour + prepand + ' : ' + minute + ' : ' + seconds)
+// console.log('current time: ' + hour + prepand + ' : ' + minute + ' : ' + seconds)
 
 //async function takes a call back and invokes it after a delay of 2 seconds. 
 // function asyncFn(callback) {
