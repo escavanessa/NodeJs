@@ -20,12 +20,13 @@
 // area(4, 8);
 
 // check if a year is a leapyear in the gregorian calendar
+//this just uses truthy falsy to determine whether a year is a leap year. 
 
-function leapYear(year) {
-  return (year % 100 == 0) ? (year % 400 == 0) : (year % 4 == 0);
-}
+// function leapYear(year) {
+//   return (year % 100 == 0) ? (year % 400 == 0) : (year % 4 == 0);
+// }
 
-console.log(leapYear(2016))
+// console.log(leapYear(2016))
 
 
 //display todays date
