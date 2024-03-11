@@ -28,6 +28,21 @@
 
 // console.log(leapYear(2016))
 
+//january 1st is sunday between 2014 - 2050
+//first we wanna loop through the years and create a date object of the current year (the year of that iteration)
+//check if jan 1st is on a sunday where sunday is = to 0 index.
+
+function sunday() {
+  for (year = 2014; year <= 2050; year++) {
+    const day = new Date(year, 0, 1);
+
+    if (day.getDay() === 0) {
+      console.log(`january 1st on sunday lands on this year: ${year}`)
+    }
+  }
+}
+
+console.log(sunday())
 
 //display todays date
 // const today = new Date;
