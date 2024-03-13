@@ -13,6 +13,21 @@
 //     }
 //   }
 // 
+//calculate days before christmas
+function calculate() {
+  let today = new Date();
+  let cmas = new Date(today.getFullYear(), 11, 25);
+
+  if(today.getMonth() == 11 && today.getDate() > 25) {
+    cmas.setFullYear(cmas.getFullYear() + 1)
+  }
+
+  let variable = 1000 * 60 * 60 * 24;
+  console.log(Math.ceil((cmas.getTime() - today.getTime()) / (variable)))
+}
+
+calculate();
+
 
 // function randomGame() {
 //   const gnum = prompt('guess a number between 1 and 10')
