@@ -14,12 +14,20 @@
 //   }
 // 
 
-function randomGame() {
-  let num = Math.ceil(Math.random() * 10);
-  console.log(num)
-}
+// function randomGame() {
+//   const gnum = prompt('guess a number between 1 and 10')
 
-randomGame();
+//   let num = Math.ceil(Math.random() * 10);
+//   console.log(num)
+
+//   if(num == gnum) {
+//     console.log('matched!')
+//   } else {
+//     console.log('try again')
+//   }
+// }
+
+// randomGame();
 
 
 // function area(a, b) {
