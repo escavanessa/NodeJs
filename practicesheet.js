@@ -14,6 +14,7 @@
 //   }
 // 
 //calculate days before christmas
+//i dont know what the variable is for, the 1000 times 60 times whatever.
 function calculate() {
   let today = new Date();
   let cmas = new Date(today.getFullYear(), 11, 25);
