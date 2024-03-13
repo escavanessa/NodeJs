@@ -1,3 +1,5 @@
+//THIS IS MY JS PRACTICE SHEET. <3
+
 //this is object literal notation. its great for one off objects but if you want to make two 
 //or more objects of the same type, youre gonna want to use objects with constructors.
 // const bike = {
@@ -10,7 +12,15 @@
 //       this.currentGear -= changeBy;
 //     }
 //   }
-// }
+// 
+
+function randomGame() {
+  let num = Math.ceil(Math.random() * 10);
+  console.log(num)
+}
+
+randomGame();
+
 
 // function area(a, b) {
 //   let result = a * b / 2
@@ -28,9 +38,9 @@
 
 // console.log(leapYear(2016))
 
-//january 1st is sunday between 2014 - 2050
-//first we wanna loop through the years and create a date object of the current year (the year of that iteration)
-//check if jan 1st is on a sunday where sunday is = to 0 index.
+// january 1st is sunday between 2014 - 2050
+// first we wanna loop through the years and create a date object of the current year (the year of that iteration)
+// check if jan 1st is on a sunday where sunday is = to 0 index.
 
 // function sunday() {
 //   for (year = 2014; year <= 2050; year++) {
@@ -41,8 +51,8 @@
 //     }
 //   }
 // }
-
-// console.log(sunday())
+// //you dont need to console log the sunday!
+// sunday();
 
 //display todays date
 // const today = new Date;
