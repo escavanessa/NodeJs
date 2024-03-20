@@ -1,5 +1,12 @@
 //THIS IS MY JS PRACTICE SHEET. <3
 
+let admin;
+let user = 'john'
+admin = user
+console.log(admin)
+
+let ourPlanet = 'earth'
+let currentVisitorName = 'current visitor'
 //this is object literal notation. its great for one off objects but if you want to make two 
 //or more objects of the same type, youre gonna want to use objects with constructors.
 // const bike = {
@@ -15,19 +22,19 @@
 // 
 //calculate days before christmas
 //i dont know what the variable is for, the 1000 times 60 times whatever.
-function calculate() {
-  let today = new Date();
-  let cmas = new Date(today.getFullYear(), 11, 25);
+// function calculate() {
+//   let today = new Date();
+//   let cmas = new Date(today.getFullYear(), 11, 25);
 
-  if(today.getMonth() == 11 && today.getDate() > 25) {
-    cmas.setFullYear(cmas.getFullYear() + 1)
-  }
+//   if(today.getMonth() == 11 && today.getDate() > 25) {
+//     cmas.setFullYear(cmas.getFullYear() + 1)
+//   }
 
-  let variable = 1000 * 60 * 60 * 24;
-  console.log(Math.ceil((cmas.getTime() - today.getTime()) / (variable)))
-}
+//   let variable = 1000 * 60 * 60 * 24;
+//   console.log(Math.ceil((cmas.getTime() - today.getTime()) / (variable)))
+// }
 
-calculate();
+// calculate();
 
 
 // function randomGame() {
