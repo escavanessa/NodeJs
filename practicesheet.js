@@ -1,12 +1,18 @@
 //THIS IS MY JS PRACTICE SHEET. <3
 
-let admin;
-let user = 'john'
-admin = user
-console.log(admin)
+// let admin;
+// let user = 'john'
+// admin = user
+// console.log(admin)
 
-let ourPlanet = 'earth'
-let currentVisitorName = 'current visitor'
+// let ourPlanet = 'earth'
+// let currentVisitorName = 'current visitor'
+// console.log((4+6+9) / 77)
+let a = 10;
+// console.log(9*a);
+let b = 7 * a;
+console.log(b)
+
 //this is object literal notation. its great for one off objects but if you want to make two 
 //or more objects of the same type, youre gonna want to use objects with constructors.
 // const bike = {
