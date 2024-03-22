@@ -7,7 +7,37 @@
 //   console.log('you dont know? ECMAscript')
 // }
 
+// function troubleshooting() {
+// 	const a = 1;
+// 	const b = 1;
 
+// 	let result;
+// 	result = a + b;
+//   return result
+// }
+
+// troubleshooting();
+let age = 10;
+
+if (age < 14 || age < 90) {
+  console.log('cool')
+} else {
+  console.log('youre older than 90 or younger the 14')
+}
+
+// console.log( null || 2 || undefined);
+
+
+// const a = 1 + 8;
+// const b = 22 * 3;
+// const c = 5 % 4;
+// const d = a - 17;
+// const e = a + b + c + d;
+
+// console.log(e)
+// (login == 'Employee') ? 'hello' :
+// (login == 'Director') ? 'greetings':
+// (login == '') ?  'No login' : ''
 // let value = -4
 
 // if(value < 0) {
