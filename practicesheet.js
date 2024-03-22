@@ -1,4 +1,23 @@
 //THIS IS MY JS PRACTICE SHEET. <3
+// let input = 'ECMAScript'
+
+// if(input === 'ECMAScript') {
+//   console.log('right!')
+// } else {
+//   console.log('you dont know? ECMAscript')
+// }
+
+
+// let value = -4
+
+// if(value < 0) {
+//   console.log('-1')
+// } else if(value === 0) {
+//   console.log('0')
+// } else {
+//   console.log('1')
+// }
+
 
 // let admin;
 // let user = 'john'
@@ -8,10 +27,10 @@
 // let ourPlanet = 'earth'
 // let currentVisitorName = 'current visitor'
 // console.log((4+6+9) / 77)
-let a = 10;
+// let a = 10;
 // console.log(9*a);
-let b = 7 * a;
-console.log(b)
+// let b = 7 * a;
+// console.log(b)
 
 //this is object literal notation. its great for one off objects but if you want to make two 
 //or more objects of the same type, youre gonna want to use objects with constructors.
