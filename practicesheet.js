@@ -17,12 +17,12 @@
 // }
 
 // troubleshooting();
-let age = 10;
+let age = 89;
 
-if (age < 14 || age < 90) {
-  console.log('cool')
+if (age < 14 || age > 90) {
+  console.log('you fall outside of range')
 } else {
-  console.log('youre older than 90 or younger the 14')
+  console.log('you fall in range')
 }
 
 // console.log( null || 2 || undefined);
