@@ -6,9 +6,14 @@
 // } else {
 //   console.log('you dont know? ECMAscript')
 // }
+function multiple(a,b) {
+  console.log(a * b);
+}
 
-const add = num => num + 7;
-console.log(add(8))
+multiple(6,7)
+
+// const add = num => num + 7;
+// console.log(add(8))
 
 // function troubleshooting() {
 // 	const a = 1;
