@@ -6,11 +6,20 @@
 // } else {
 //   console.log('you dont know? ECMAscript')
 // }
-function multiple(a,b) {
-  console.log(a * b);
+// function multiple(a,b) {
+//   console.log(a * b);
+// }
+
+// multiple(6,7)
+
+function upperCase(string) {
+  let letter = string.charAt(0);
+  let leftOver = string.slice(1);
+  let final = letter.toUpperCase() + leftOver
+  return final 
 }
 
-multiple(6,7)
+console.log(upperCase('amazing'))
 
 // const add = num => num + 7;
 // console.log(add(8))
