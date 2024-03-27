@@ -7,6 +7,9 @@
 //   console.log('you dont know? ECMAscript')
 // }
 
+const add = num => num + 7;
+console.log(add(8))
+
 // function troubleshooting() {
 // 	const a = 1;
 // 	const b = 1;
@@ -17,13 +20,13 @@
 // }
 
 // troubleshooting();
-let age = 89;
+// let age = 89;
 
-if (age < 14 || age > 90) {
-  console.log('you fall outside of range')
-} else {
-  console.log('you fall in range')
-}
+// if (age < 14 || age > 90) {
+//   console.log('you fall outside of range')
+// } else {
+//   console.log('you fall in range')
+// }
 
 // console.log( null || 2 || undefined);
 
