@@ -12,14 +12,20 @@
 
 // multiple(6,7)
 
-function upperCase(string) {
-  let letter = string.charAt(0);
-  let leftOver = string.slice(1);
-  let final = letter.toUpperCase() + leftOver
-  return final 
+function lastLetter(str) {
+  return str.charAt(str.length - 1);
 }
 
-console.log(upperCase('amazing'))
+console.log(lastLetter('rfgehnuigew'))
+
+// function upperCase(string) {
+//   let letter = string.charAt(0);
+//   let leftOver = string.slice(1);
+//   let final = letter.toUpperCase() + leftOver
+//   return final 
+// }
+
+// console.log(upperCase('amazing'))
 
 // const add = num => num + 7;
 // console.log(add(8))
