@@ -12,11 +12,26 @@
 
 // multiple(6,7)
 
-function lastLetter(str) {
-  return str.charAt(str.length - 1);
-}
+// function lastLetter(str) {
+//   return str.charAt(str.length - 1);
+// }
 
-console.log(lastLetter('rfgehnuigew'))
+// console.log(lastLetter('rfgehnuigew'))
+// function fizzBuzz(num) {
+//   for (i = 1; i <= num; i++) {
+//     if(i % 3 === 0 && i % 5 === 0) {
+//       console.log('fizzbuzz');
+//     } else if(i % 3 === 0) {
+//       console.log('fizz')
+//     } else if (i % 5 === 0) {
+//       console.log('buzz');
+//     } else {
+//       console.log(i)
+//     }
+//   }
+// }
+
+// fizzBuzz(15)
 
 // function upperCase(string) {
 //   let letter = string.charAt(0);
