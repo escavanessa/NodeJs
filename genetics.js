@@ -21,6 +21,23 @@ for (const prop in punnett) {
     genomes.push(punnett[prop])
 }
 
+// function findPercent(arr) {
+//     let i = 0;
+//     let j = arr.length - 1;
+
+//     while (left < right) {
+//         if(arr[i] !== arr[j]) {
+//             sum = 25;
+//             j--
+//         } else {
+//             sum = 50
+//         }
+//         if(arr[i] !== arr[j]) {
+             
+//         }
+//     }
+// }
+
 // for (i = 0; i < genomes.length; i++) {
     // if(genomes[0] === genomes[1] && genomes[2] && genomes[3]) {
     //     console.log(genomes)
