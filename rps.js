@@ -16,18 +16,24 @@ function playRound(computerSelection, playerSelection) {
     } else if (playerSelection === 'rock') {
         if(computerSelection === 'scissors') {
             console.log('rock beats scissors: player wins')
+        } else {
+            console.log('comp wins')
         }
     } else if (playerSelection === "paper") {
         if(computerSelection === 'rock') {
             console.log('paper beats rock: player wins')
+        } else {
+            console.log('comp wins')
         }
     } else if (playerSelection === 'scissors') {
         if (computerSelection === 'paper') {
             console.log('scissors beats paper: player wins')
+        } else {
+            console.log('comp wins')
         }
     } else {
-        console.log(playerSelection, computerSelection)
+       return
     }
 }
 console.log(playerSelection, computerSelection)
-playRound()
+playRound(playerSelection, computerSelection)
