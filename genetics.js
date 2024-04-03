@@ -16,10 +16,12 @@ const punnett = {
     s4: p1.t2 + p2.t2
 }
 
-let genomes = []
-for (const prop in punnett) {
-    genomes.push(punnett[prop])
-}
+console.log(punnett)
+Object.values(punnett).reduce(function (accumulator, traits) {
+    let count = accumulator[traits] ?? 0;
+    accumulator[traits] = count += 25;
+    return accumulator
+}, {});
 
 // function findPercent(arr) {
 //     let i = 0;
