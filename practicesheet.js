@@ -1,4 +1,25 @@
 //THIS IS MY JS PRACTICE SHEET. <3
+
+//ACTIVE LEARNING 
+
+// for (let i = 10; i > 0; i--) {
+//   console.log(i)
+//   if(i === 1) {
+//     console.log('blast off!')
+//   }
+// }
+
+let people = ['vanessa', 'solange', 'nick', 'luke', 'phil', 'john', 'lola', 'scarlet']
+
+for (let i = 0; i < people.length; i++) {
+  // console.log(people[i]);
+  if (people[i] === 'phil' || people[i] === 'lola'){
+    console.log(people[i] + ' refused')
+  } else {
+    console.log(people[i] + ' admitted')
+  }
+}
+
 // let input = 'ECMAScript'
 
 // if(input === 'ECMAScript') {
