@@ -2,11 +2,13 @@
 
 //ACTIVE LEARNING 
 const sumAll = function(start, finish) {
+  //in the case that the first number is bigger than the second number, you can use a temp variable to essentailly switch the numbers
   if (start > finish) {
     const temp = start;
     start = finish;
     finish = temp;
   }
+  // a for loop, the += i and the = finish is necessary, not sure why but it is. 
   let sum = 0;
   for (let i = start; i <= finish; i++) {
     sum += i;
