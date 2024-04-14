@@ -1,12 +1,27 @@
 //THIS IS MY JS PRACTICE SHEET. <3
 
 //ACTIVE LEARNING 
-const removeFromArray = function(arr, target) {
-  const filtered = arr.filter((num) => num != target);
-  return filtered
+const sumAll = function(start, finish) {
+  if (start > finish) {
+    const temp = start;
+    start = finish;
+    finish = temp;
+  }
+  let sum = 0;
+  for (let i = start; i <= finish; i++) {
+    sum += i;
+  }
+  return sum;
 };
 
-console.log(removeFromArray([1,2,3,4,5], 3));
+console.log(sumAll(123, 1))
+
+// const removeFromArray = function(arr, target) {
+//   const filtered = arr.filter((num) => num != target);
+//   return filtered
+// };
+
+// console.log(removeFromArray([1,2,3,4,5], 3));
 
 // const repeatString = function(str, count) {
 //     for (let i = 0; i < count; i++) {
