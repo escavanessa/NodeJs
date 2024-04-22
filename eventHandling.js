@@ -1,3 +1,13 @@
+const buttons = document.querySelectorAll("button")
+//to target a node list, like a group of buttons that you want them all 
+//to do teh same thing, you can iterate over the variable that has the buttons
+//saved, then you can create the event handler for each singluar button!
+buttons.forEach((button) => {
+    button.addEventListener("click", () => {
+        console.log(button.id);
+    })
+})
+
 const paragraph = document.createElement("p");
 paragraph.style.color = "red"
 paragraph.textContent = "hey im red!"
@@ -19,3 +29,4 @@ div.appendChild(text);
 const paragraph2 = document.createElement("p")
 paragraph2.textContent = "Im also a div";
 div.appendChild(paragraph2);
+
