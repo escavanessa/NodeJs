@@ -1,22 +1,96 @@
 //THIS IS MY JS PRACTICE SHEET. <3
 
 //ACTIVE LEARNING 
-const sumAll = function(start, finish) {
-  //in the case that the first number is bigger than the second number, you can use a temp variable to essentailly switch the numbers
-  if (start > finish) {
-    const temp = start;
-    start = finish;
-    finish = temp;
+  const myFunction = arr => {
+       return arr. reduce((result, current) => {
+          return result + current;
+       }, 10);
   }
-  // a for loop, the += i and the = finish is necessary, not sure why but it is. 
-  let sum = 0;
-  for (let i = start; i <= finish; i++) {
-    sum += i;
-  }
-  return sum;
-};
 
-console.log(sumAll(123, 1))
+  let arr = []
+  console.log(myFunction(arr))
+  
+  // function changeValue (param) {
+  //       param = 5 ;
+  //   }
+  //   let a =10 ;
+  //   let b = a ;
+  
+  //   changeValue (b) ;
+  //   const result =a+' - '+b ;
+  //   console.log(result)
+// const huh = 0 && hi
+// console.log(huh)
+
+// class Item {
+//   constructor (name, price) {
+//       this.name = name;
+//       this.price = price
+//    }
+// }
+
+// class SaleItem extends Item {
+//   constructor (name, price, discount) {
+//     super(name, price);
+//     this.discount = discount
+//   }
+// }
+//   let regItem = new Item('Scarf', 55) ;
+//   let saleItem = new SaleItem('Shirt', 80, .1) ;
+//   Item.prototype.description = function( ){ return 'This is a ' + this.name; }
+//   console.log (regItem.description( ));
+//   console.log(saleItem.description( ));
+
+//   SaleItem. prototype. description = function( ) { return 'This is a discounted'+ this.name; }
+//   console.log(regItem. description( ));
+//   console.log (saleItem. description( )) ;
+// console.log(parseInt('two'))
+// let first = 'Who';
+// let second = 'What';
+//   try {
+//      try {
+//        throw new Error('Sad trombone');
+//      } catch (err) {
+//        first = 'Why' ;
+//      } finally {
+//        second = 'When';
+//      }
+//   } catch (err) {
+//     second = 'Where' ;
+//   }
+
+// console.log(first, second)
+// const type = true + '13' + NaN
+// console.log(type)
+  // function Person( ) {
+  //      this . firstName = 'John' ;
+  //   }
+  
+  //   Person. prototype = {
+  //        job: x =>  'Developer '
+  //   } ;
+  
+  //  const myFather = new Person( ) ;
+  //  const result = myFather . firstName + ' ' + myFather. job( ) ;
+  //  console.log(result)
+
+
+// const sumAll = function(start, finish) {
+//   //in the case that the first number is bigger than the second number, you can use a temp variable to essentailly switch the numbers
+//   if (start > finish) {
+//     const temp = start;
+//     start = finish;
+//     finish = temp;
+//   }
+//   // a for loop, the += i and the = finish is necessary, not sure why but it is. 
+//   let sum = 0;
+//   for (let i = start; i <= finish; i++) {
+//     sum += i;
+//   }
+//   return sum;
+// };
+
+// console.log(sumAll(123, 1))
 
 // const removeFromArray = function(arr, target) {
 //   const filtered = arr.filter((num) => num != target);
