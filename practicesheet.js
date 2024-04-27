@@ -1,14 +1,19 @@
 //THIS IS MY JS PRACTICE SHEET. <3
 
 //ACTIVE LEARNING 
-  const myFunction = arr => {
-       return arr. reduce((result, current) => {
-          return result + current;
-       }, 10);
-  }
+// let myArray = [1, "5", "eleven", "11" + 17];
+// let newArray = myArray.map( function(item){ return item / 2 ; } );
+// console.log(newArray); 
 
-  let arr = []
-  console.log(myFunction(arr))
+// console.log(false == "")
+  // const myFunction = arr => {
+  //      return arr. reduce((result, current) => {
+  //         return result + current;
+  //      }, 10);
+  // }
+
+  // let arr = []
+  // console.log(myFunction(arr))
   
   // function changeValue (param) {
   //       param = 5 ;
