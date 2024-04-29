@@ -11,7 +11,10 @@
   //         return result + current;
   //      }, 10);
   // }
-
+  // console.log( 1 + 1 == 2 && 10 * 10 > 50)
+  // console.log("hello" * null)
+  // console.log(null === 0)
+  // console.log("")
   // let arr = []
   // console.log(myFunction(arr))
   
