@@ -1,6 +1,29 @@
 //THIS IS MY JS PRACTICE SHEET. <3
 
 //ACTIVE LEARNING 
+
+// for( let i = 0; i <= 100; i++) {
+//   if (i % 3 === 0 && i % 5 === 0) {
+//     console.log('fizz buzz')
+//   } else if(i % 3 === 0) {
+//     console.log('fizz')
+//   } else if (i % 5 === 0) {
+//     console.log('buzz')
+//   } else {
+//     console.log(i)
+//   }
+// }
+/*
+this is an extremely elegant solution for this. basically youre declaring output as an empty string which would be false as a 
+boolean vlaue.
+*/
+// for (let n = 1; n <= 100; n++) {
+//   let output = "";
+//   if (n % 3 == 0) output += "Fizz";
+//   if (n % 5 == 0) output += "Buzz";
+//   console.log(output || n);
+// }
+
 // let myArray = [1, "5", "eleven", "11" + 17];
 // let newArray = myArray.map( function(item){ return item / 2 ; } );
 // console.log(newArray); 
@@ -14,7 +37,7 @@
   // console.log( 1 + 1 == 2 && 10 * 10 > 50)
   // console.log("hello" * null)
   // console.log(null === 0)
-  // console.log("")
+  console.log('')
   // let arr = []
   // console.log(myFunction(arr))
   
