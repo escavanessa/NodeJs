@@ -15,7 +15,9 @@
 // }
 /*
 this is an extremely elegant solution for this. basically youre declaring output as an empty string which would be false as a 
-boolean vlaue.
+boolean value. if n falls under either condition - being divisible by 3 or 5 - the output will print out because it has a value of 
+true, therefore the value is returned bc of the || operator. using the += allows fizzbuzz to be printed if BOTH conditions are true
+rather than just one. if the number falls under neither, the value to the right of the || is printed.
 */
 // for (let n = 1; n <= 100; n++) {
 //   let output = "";
@@ -23,6 +25,29 @@ boolean vlaue.
 //   if (n % 5 == 0) output += "Buzz";
 //   console.log(output || n);
 // }
+
+//prints a triangle. if the length of the string is less than 8, you add and = it to a hashtag! pretty staright forward. 
+// for (let i = "#"; i.length < 8; i += "#") {
+//   console.log(i)
+// }
+
+
+let w = 6;
+let h = 10
+
+let board = "";
+
+for (let y = 0; y < w; y++) {
+  for (let x = 0; x < h; x++) {
+    if ((x + y) % 2 == 0) {
+      board += " ";
+    } else {
+      board += "#";
+    }
+  }
+  board += "\n";
+}
+console.log(board);
 
 // let myArray = [1, "5", "eleven", "11" + 17];
 // let newArray = myArray.map( function(item){ return item / 2 ; } );
@@ -37,7 +62,7 @@ boolean vlaue.
   // console.log( 1 + 1 == 2 && 10 * 10 > 50)
   // console.log("hello" * null)
   // console.log(null === 0)
-  console.log('')
+  // console.log("")
   // let arr = []
   // console.log(myFunction(arr))
   
