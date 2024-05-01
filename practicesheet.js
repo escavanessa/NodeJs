@@ -30,14 +30,14 @@ rather than just one. if the number falls under neither, the value to the right 
 // for (let i = "#"; i.length < 8; i += "#") {
 //   console.log(i)
 // }
+// 89 
+// const halve = function(n) {
+//   return n / 2;
+// };
 
-const halve = function(n) {
-  return n / 2;
-};
-
-let n = 10;
-console.log(halve(100))
-console.log(n)
+// let n = 10;
+// console.log(halve(100))
+// console.log(n)
 
 // let w = 6;
 // let h = 10
