@@ -31,23 +31,30 @@ rather than just one. if the number falls under neither, the value to the right 
 //   console.log(i)
 // }
 
+const halve = function(n) {
+  return n / 2;
+};
 
-let w = 6;
-let h = 10
+let n = 10;
+console.log(halve(100))
+console.log(n)
 
-let board = "";
+// let w = 6;
+// let h = 10
 
-for (let y = 0; y < w; y++) {
-  for (let x = 0; x < h; x++) {
-    if ((x + y) % 2 == 0) {
-      board += " ";
-    } else {
-      board += "#";
-    }
-  }
-  board += "\n";
-}
-console.log(board);
+// let board = "";
+
+// for (let y = 0; y < w; y++) {
+//   for (let x = 0; x < h; x++) {
+//     if ((x + y) % 2 == 0) {
+//       board += " ";
+//     } else {
+//       board += "#";
+//     }
+//   }
+//   board += "\n";
+// }
+// console.log(board);
 
 // let myArray = [1, "5", "eleven", "11" + 17];
 // let newArray = myArray.map( function(item){ return item / 2 ; } );
