@@ -2,6 +2,41 @@
 
 //ACTIVE LEARNING 
 
+
+function countBs(str) {
+  let count = 0;
+  for (let i = 0; i <= str.length -1; i++) {
+    if(str[i] === str[i].toUpperCase()) {
+      count = count + 1
+    }
+    //if i put the console log here id get all the iterations printed into the console.
+  }
+  console.log(count);
+}
+countBs("BOB")
+
+
+function countChar(str, letter) {
+  let count = 0;
+  for (let i = 0; i <= str.length -1; i++) {
+    if(str[i] !== letter) {
+     console.log('letter not found')
+    } else {
+      if(str[i] === letter) {
+        count = count + 1;
+      }
+    }
+    //if i put the console log here id get all the iterations printed into the console.
+  }
+  console.log(count);
+}
+countChar("heLLLLLO", 'o')
+// function min(x, y) {
+//   return Math.min(x, y);
+// }
+
+// console.log(min(4,2))
+
 // for( let i = 0; i <= 100; i++) {
 //   if (i % 3 === 0 && i % 5 === 0) {
 //     console.log('fizz buzz')
@@ -39,9 +74,10 @@ rather than just one. if the number falls under neither, the value to the right 
 // console.log(halve(100))
 // console.log(n)
 
+
+//CHESS BOARD PROBELM.
 // let w = 6;
 // let h = 10
-
 // let board = "";
 
 // for (let y = 0; y < w; y++) {
