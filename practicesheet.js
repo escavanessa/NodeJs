@@ -3,34 +3,28 @@
 //ACTIVE LEARNING 
 
 
-function countBs(str) {
-  let count = 0;
-  for (let i = 0; i <= str.length -1; i++) {
-    if(str[i] === str[i].toUpperCase()) {
-      count = count + 1
-    }
-    //if i put the console log here id get all the iterations printed into the console.
-  }
-  console.log(count);
-}
-countBs("BOB")
+// function countChar(str, letter) {
+//   let count = 0;
+//   for (let i = 0; i <= str.length -1; i++) {
+//     if(str[i] !== letter) {
+//      console.log('letter not found')
+//     } else {
+//       if(str[i] === letter) {
+//         count = count + 1;
+//       }
+//     }
+//     //if i put the console log here id get all the iterations printed into the console.
+//   }
+//   console.log(count);
+// }
 
 
-function countChar(str, letter) {
-  let count = 0;
-  for (let i = 0; i <= str.length -1; i++) {
-    if(str[i] !== letter) {
-     console.log('letter not found')
-    } else {
-      if(str[i] === letter) {
-        count = count + 1;
-      }
-    }
-    //if i put the console log here id get all the iterations printed into the console.
-  }
-  console.log(count);
-}
-countChar("heLLLLLO", 'o')
+// function countBs(str) {
+//   return countChar(str, "B")
+// }
+
+// countBs("BOB")
+// countChar("kakerlak", 'k')
 // function min(x, y) {
 //   return Math.min(x, y);
 // }
