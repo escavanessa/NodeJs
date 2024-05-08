@@ -1,7 +1,15 @@
 //THIS IS MY JS PRACTICE SHEET. <3
 
-//ACTIVE LEARNING 
-
+//ACTIVE LEARNING
+console.log(true + '13' + NaN) 
+//   let array = [1, 2, 3, 4, 4, 5, 4, 4];
+//   for (let i = 0 ; i< array.length; i++) {
+//       if (array[i] === 4) {
+//         array.splice(i, 1) ;
+//       }
+// }
+//this has to skip over or something because the answer isnt 1235. two fours remain. i think it splices the first four, then it goes to five. 
+// then it goes to the next four, splices it, and ends on the last four. 
 
 // function countChar(str, letter) {
 //   let count = 0;
