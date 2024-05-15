@@ -1,7 +1,12 @@
 //THIS IS MY JS PRACTICE SHEET. <3
 
 //ACTIVE LEARNING
-console.log(true + '13' + NaN) 
+// console.log(true + '13' + NaN) 
+function remove(array, index) {
+  return array.slice(0, index).concat(array.slice(index + 1))
+}
+
+console.log(remove(["a", "b", "c", "d", "e"], 2))
 //   let array = [1, 2, 3, 4, 4, 5, 4, 4];
 //   for (let i = 0 ; i< array.length; i++) {
 //       if (array[i] === 4) {
