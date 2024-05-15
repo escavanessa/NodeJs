@@ -1,12 +1,22 @@
 //THIS IS MY JS PRACTICE SHEET. <3
 
 //ACTIVE LEARNING
-// console.log(true + '13' + NaN) 
-function remove(array, index) {
-  return array.slice(0, index).concat(array.slice(index + 1))
+function sum(start, end){
+  let arr = [];
+  for (let i = start; i > end; i++) {
+    return arr.push(i);
+  }
+  console.log(arr)
 }
 
-console.log(remove(["a", "b", "c", "d", "e"], 2))
+console.log(sum(1, 10))
+
+// console.log(true + '13' + NaN) 
+// function remove(array, index) {
+//   return array.slice(0, index).concat(array.slice(index + 1))
+// }
+
+// console.log(remove(["a", "b", "c", "d", "e"], 2))
 //   let array = [1, 2, 3, 4, 4, 5, 4, 4];
 //   for (let i = 0 ; i< array.length; i++) {
 //       if (array[i] === 4) {
