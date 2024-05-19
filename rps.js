@@ -2,6 +2,12 @@
 //they are created when the function runs - they can really be named anything. what matters is the parameters passed when the function is 
 //called. (? im still really confused ont this...???)
 
+const rockbtn = document.getElementById('#rock')
+
+rockbtn.addEventListener("click", () => {
+    
+})
+
 function getComputerChoice() {
     //random choice bewteen rock, paper, and scissor
     let arr = ['rock', 'paper', 'scissors'];
