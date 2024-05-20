@@ -1,15 +1,18 @@
 //THIS IS MY JS PRACTICE SHEET. <3
 
-//ACTIVE LEARNING
-function sum(start, end){
-  let arr = [];
-  for (let i = start; i > end; i++) {
-    return arr.push(i);
-  }
-  console.log(arr)
-}
+//working on git authorization --- random commits coming
 
-console.log(sum(1, 10))
+//ACTIVE LEARNING
+
+// function sum(start, end){
+//   let arr = [];
+//   for (let i = start; i > end; i++) {
+//     return arr.push(i);
+//   }
+//   console.log(arr)
+// }
+
+// console.log(sum(1, 10))
 
 // console.log(true + '13' + NaN) 
 // function remove(array, index) {
