@@ -1,7 +1,12 @@
 //some serious discussions about scope in this project. in the playRound funciton, those parameters are just temporary in a sense.
 //they are created when the function runs - they can really be named anything. what matters is the parameters passed when the function is 
 //called. (? im still really confused ont this...???)
-for (let i = 1; i < 6; i++) {
+
+const rockbtn = document.getElementById('#rock')
+
+rockbtn.addEventListener("click", () => {
+    
+})
 
 function getComputerChoice() {
     //random choice bewteen rock, paper, and scissor
@@ -61,9 +66,8 @@ function playRound(playerSelection, computerSelection) {
 let playerSelection = getPlayerChoice();
 let computerSelection = getComputerChoice();
 
-console.log('Round:' + i)
+
 console.log("Player Selection: " + playerSelection)
 console.log("Computer Selection: " + computerSelection)
 console.log(playRound(playerSelection, computerSelection))
 
-}

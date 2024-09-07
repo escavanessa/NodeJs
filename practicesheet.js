@@ -1,15 +1,19 @@
 //THIS IS MY JS PRACTICE SHEET. <3
 
-//ACTIVE LEARNING
-function range(start, end) {
-  let arr = [];
-  for (let i = start; i <= end; i++) {
-    arr.push(i);
-  }
-  console.log(arr)
-}
+//working on git authorization --- random commits coming
+//another change - original auth didnt work
 
-range(2, 8);
+//ACTIVE LEARNING
+
+// function range(start, end) {
+//   let arr = [];
+//   for (let i = start; i <= end; i++) {
+//     arr.push(i);
+//   }
+//   console.log(arr)
+// }
+
+// range(2, 8);
 
 // console.log(true + '13' + NaN) 
 // function remove(array, index) {
