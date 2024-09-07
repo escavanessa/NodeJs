@@ -1,15 +1,15 @@
 //THIS IS MY JS PRACTICE SHEET. <3
 
 //ACTIVE LEARNING
-function sum(start, end){
+function range(start, end) {
   let arr = [];
-  for (let i = start; i > end; i++) {
-    return arr.push(i);
+  for (let i = start; i <= end; i++) {
+    arr.push(i);
   }
   console.log(arr)
 }
 
-console.log(sum(1, 10))
+range(2, 8);
 
 // console.log(true + '13' + NaN) 
 // function remove(array, index) {
