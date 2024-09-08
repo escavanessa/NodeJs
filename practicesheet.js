@@ -5,15 +5,35 @@
 
 //ACTIVE LEARNING
 
+//reverse arr
+//so close! two things to note. you want the new arr to contain the index of the old arr, so arr[i] is needed in the push method - if not youll get 
+//the numerical incriments and NOT what is contained in the actual array. so youll always just get the counted amount of indexs
+//and not what is in the actual array 
+//the second thing to note is the i >= 0. I thought i needed to specify the array somehow but i think its saying that when i is less than or equal to
+//0 indexes and not the actual number zero, the loop stops/ 
+function reverse(arr) {
+  let newArr = []
+  for(let i = arr.length -1; i >= 0; i--) {
+    newArr.push(arr[i])
+  }
+  console.log(newArr)
+}
+
+reverse([1,2,3,4,5])
+
+
+
 // function range(start, end) {
 //   let arr = [];
+//   let sum = 0
 //   for (let i = start; i <= end; i++) {
 //     arr.push(i);
+//     sum += i
 //   }
-//   console.log(arr)
+//   console.log(arr, sum)
 // }
 
-// range(2, 8);
+// range(1, 10);
 
 // console.log(true + '13' + NaN) 
 // function remove(array, index) {
