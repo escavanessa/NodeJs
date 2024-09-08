@@ -11,15 +11,28 @@
 //and not what is in the actual array 
 //the second thing to note is the i >= 0. I thought i needed to specify the array somehow but i think its saying that when i is less than or equal to
 //0 indexes and not the actual number zero, the loop stops/ 
-function reverse(arr) {
-  let newArr = []
-  for(let i = arr.length -1; i >= 0; i--) {
-    newArr.push(arr[i])
+// function reverse(arr) {
+//   let newArr = []
+//   for(let i = arr.length -1; i >= 0; i--) {
+//     newArr.push(arr[i])
+//   }
+//   console.log(newArr)
+// }
+
+// reverse([1,2,3,4,5])
+
+//temp variable in all its glory. basically its a loop that cuts teh arr in half every iteration sort of. after that
+//a var is made with the value of the currect index. then that is made equal to something. i actually have no idea
+function revMod(arr) {
+  for(let i = 0; i < Math.floor(arr.length /2); i++) {
+    let old = arr[i];
+    arr[i] = arr[arr.length -1 - i];
+    arr[arr.length -1 - i] = old;
   }
-  console.log(newArr)
+  return arr
 }
 
-reverse([1,2,3,4,5])
+console.log(revMod([1,2,3,6,5]))
 
 
 
