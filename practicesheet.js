@@ -13,6 +13,59 @@
 
 //ACTIVE LEARNING
 
+
+//sort array from lowest to highest
+//w sort method and without sort method
+
+// function sort(arr){
+//   arr.sort((a,b) => b - a)
+//   return arr
+// }
+
+// console.log(sort([1,2,3,4,]))
+
+//w out method
+//this is simple. loop over arr. if arr[i] is greater than or equal to 0,
+//add it to a new arr and return said arr. the greater and lesser is confusing
+//but its fine. 
+
+function filter(arr) {
+  let result = [];
+  for (let i = 0; i < arr.length; i++) {
+    if(arr[i] >= 0) {
+      result.push(arr[i]);
+    }
+  }
+  return result;
+}
+
+console.log(filter([1,2,-3,-5,3]))
+
+// function bubblesort(arr){
+//   for(let i = 0; i < arr.length; i++) { //interatres over the array to ensure all elements are in the correct order
+//     for(let j = 0; j < arr.length - 1; j++){ //inerates over the ints first to swaps them if theyre in the wrong order
+//       //if to compre w adjacent int
+//       //swap by creating a temp variable and setting the original value as the new value?
+//       if(arr[j] > arr[j+1]) {
+//         let temp = arr[j];
+//         arr[j] = arr[j + 1];
+//         arr[j + 1] = temp;
+//       }
+//     }
+//   }
+//   return arr;
+// }
+
+
+// let arr = [5,3,7,1,9];
+// console.log(bubblesort(arr))
+
+
+//filter out negative number
+
+
+
+
 //chessboard part 2
 // let size = 8
 // let board = ""; 
