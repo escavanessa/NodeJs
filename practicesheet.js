@@ -1,9 +1,89 @@
 //THIS IS MY JS PRACTICE SHEET. <3
 
-//working on git authorization --- random commits coming
-//another change - original auth didnt work
+//POTENTIAL SMALL PROGRAM
+//pass a string and each letter is randomly generated and when the right letter happens, move on to the next one. 
+//print all interations to the console?
+//maybe instead of random gen letter, go down the alphabet until you reach the right one
+
+//web based challenges
+//1. dark mode
+//2. hamburger 
+//3. toggle an image with a button
+//4. add squares to a div!
 
 //ACTIVE LEARNING
+
+//chessboard part 2
+// let size = 8
+// let board = ""; 
+
+// for (let i = 0; i < size; i++){
+// //outer loop dictates the height and the inner loop dictates how many char per line
+//   for (let j = 0; j < size; j++){
+//     if((i + j) % 2 == 0) {
+//       board += " ";
+//       //checks every possible position for even or odd.
+//     }
+//     else {
+//       board += "#";
+//     }
+//   }
+//   board += "\n";
+// }
+// console.log(board)
+
+
+// function converter(k){
+//   return k * 2.2;
+// }
+
+// console.log(converter(4))
+
+//calculate sum of nums in an array
+
+
+
+// function calculate(arr) {
+//   let sum = 0;
+//   for (let n of arr) {
+//     sum += n;
+//   }
+//   return sum
+// }
+
+// console.log(calculate([4, -5]))
+
+//reverse an array
+
+// function reverse(arr) {
+//   let rev = [];
+//   for(let i = arr.length -1; i >=0 ; i--){
+//     rev.push(arr[i]);
+//   }
+//   return rev
+// }
+
+// console.log(reverse([1,2,3,4]))
+
+
+// function arrayToList(array) {
+//   //init the list
+//   let list = null;
+//   //for loop that descends
+//   for (let i = array.length -1; i >=0; i--) {
+//     //each node (corresponds to each interation of the list) 
+//     //value will be equal to the val of the index, and rest will be equal to the entire list?
+//     list = {value: array[i], rest: list};
+//   }
+//   return list
+// }
+
+// console.log(arrayToList([10,20]))
+
+
+
+
+
 
 //reverse arr
 //so close! two things to note. you want the new arr to contain the index of the old arr, so arr[i] is needed in the push method - if not youll get 
@@ -21,18 +101,21 @@
 
 // reverse([1,2,3,4,5])
 
-//temp variable in all its glory. basically its a loop that cuts teh arr in half every iteration sort of. after that
-//a var is made with the value of the currect index. then that is made equal to something. i actually have no idea
-function revMod(arr) {
-  for(let i = 0; i < Math.floor(arr.length /2); i++) {
-    let old = arr[i];
-    arr[i] = arr[arr.length -1 - i];
-    arr[arr.length -1 - i] = old;
-  }
-  return arr
-}
+// temp variable in all its glory. basically its a loop that cuts teh arr in half every iteration sort of. after that
+// a var is made with the value of the currect index. then that is made equal to something. i actually have no idea
+// function revMod(arr) {
+//   for(let i = 0; i < Math.floor(arr.length /2); i++) {
+//     let old = arr[i];
 
-console.log(revMod([1,2,3,6,5]))
+//     arr[i] = arr[arr.length -1 - i];
+
+//     arr[arr.length -1 - i] = old;
+
+//   }
+//   return arr
+// }
+
+// console.log(revMod([1,2,3,6,5]))
 
 
 
