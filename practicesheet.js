@@ -29,17 +29,21 @@
 //add it to a new arr and return said arr. the greater and lesser is confusing
 //but its fine. 
 
-function filter(arr) {
-  let result = [];
-  for (let i = 0; i < arr.length; i++) {
-    if(arr[i] >= 0) {
-      result.push(arr[i]);
-    }
-  }
-  return result;
-}
+// function filter(arr) {
+//   let result = [];
+//   for (let i = 0; i < arr.length; i++) {
+//     if(arr[i] >= 0) {
+//       result.push(arr[i]);
+//     }
+//   }
+//   return result;
+// }
 
-console.log(filter([1,2,-3,-5,3]))
+// console.log(filter([1,2,-3,-5,3]))
+
+//return boolean if number is divisable by 10
+
+//  
 
 // function bubblesort(arr){
 //   for(let i = 0; i < arr.length; i++) { //interatres over the array to ensure all elements are in the correct order
