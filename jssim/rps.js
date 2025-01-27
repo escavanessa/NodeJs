@@ -1,19 +1,10 @@
 
 
 const rockButton = document.querySelector("#rock");
-// btn1.addEventListener("click", () => {
-//     console.log("hello")
-// })
 const paperButton = document.querySelector("#paper");
-// btn2.addEventListener("click", () => {
-//     console.log("hello")
-// })
 const scissorButton = document.querySelector("#scissor");
-// btn3.addEventListener("click", () => {
-//     console.log("hello")
-// })
 const results = document.querySelector("#result-wrapper");
-//function humanSelection() {} maybe dont ened it because of the buttons?
+
 
 
 function computerPlay() {
@@ -23,7 +14,7 @@ function computerPlay() {
     return choice
 }
 
-function playRound(playerSelection, computerSelection) {  //remember params are just place holders, they dont really mean anything
+function playRound(playerSelection, computerSelection) {  
     if (playerSelection == "rock" && computerSelection == "scissors") {
         const p = document.createElement('p')
         p.innerText = 'You win! Rock beats scissors.'
